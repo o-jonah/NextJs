@@ -11,7 +11,7 @@ import Link from "next/link";
 import {FaGithub } from "react-icons/fa";
 import {FcGoogle } from "react-icons/fc";
 
-const Signup = () => {
+const SignIn = () => {
  return(
   <div className="h-full items-center justify-content bg-[#1b0918]">
     <Card className="md:h-auto w-[80%] sm:w-[420px] p-4 sm:p-8">
@@ -19,7 +19,7 @@ const Signup = () => {
 
       
       <CardTitle className="text-center">
-        Sign Up
+        Sign In
 
       </CardTitle>
       <CardDescription className="text-sm text-center text-accent-foreground">
@@ -29,14 +29,6 @@ const Signup = () => {
      </CardHeader>
      <CardContent className="px-2 sm:px-6">
       <form action="" className="space-y-3">
-        <Input
-          type="text"
-          disabled={false}
-          placeholder="Full Name"
-          value={""}
-          onChange={() => { }}
-          required
-        />
                 <Input
           type="email"
           disabled={false}
@@ -53,14 +45,7 @@ const Signup = () => {
           onChange={() => { }}
           required
         />
-                <Input
-          type="password"
-          disabled={false}
-          placeholder="confirm password"
-          value={""}
-          onChange={() => { }}
-          required
-        />
+               
         <Button className="w-full"
         size="lg"
         disabled={false}>
@@ -91,8 +76,8 @@ const Signup = () => {
         </Button>
       </div>
       <p className="text-center text-sm mt-2 text-muted-foreground">
-        Already have an account?
-        <Link className="text-sky-700 ml-4 hover:underline cursor-pointer" href="signin">Sign in</Link>
+        Create an Account?
+        <Link className="text-sky-700 ml-4 hover:underline cursor-pointer" href="signup">Create Account</Link>
       </p>
 
      </CardContent>
@@ -101,4 +86,4 @@ const Signup = () => {
  )
 }
 
-export default Signup;
+export default SignIn;
